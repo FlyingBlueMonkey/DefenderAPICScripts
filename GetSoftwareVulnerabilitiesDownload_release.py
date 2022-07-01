@@ -9,8 +9,8 @@ from urllib.request import urlopen
 
 # Variables
 requestUrl = "https://api-us.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitiesExport"
-destinationFolder = "c:/temp/downloadedVulnerabilityData/"
-fileNamePrefix = "mdvm_export_"
+destinationFolder = "c:/temp/downloadedVulnerabilityData/" # Where should we store the downloaded files?
+fileNamePrefix = "mdvm_export_" # What should we use as a prefix for the filename?
 sasFilesKeepAlive = 3 # for how many hours should the files be accessible via shared access signature?  Default is 3, max is 24
 intCounter = 0 # Counter Value that we're going to use for our filenames in the for each loop to generate unique names
 downloadedFilesList = [] # an array that will hold the filenames that we're writing out to the disk
